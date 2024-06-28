@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*body/main*/
+
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: hsl(330, 54%, 90%);
+}
+#main, box-key, box-pass, box-ingredient, box-intructions, box-nutrion {
+    padding: 20px;
+}
+
+/*box key*/
+#box-key{
+    background-color: hsl(0, 0%, 100%);
+    width: 38%;
+    border-radius: 20px;   
+    padding: 20px;      
+}
+/*box-imagem*/
+#box-imagem{
+    padding: 10px;
+}
+#imagem-omellete{
+    width: 100%;
+    border-radius: 10px;  
+    
+}
+/*box-prep*/
+#text-fisrt{
+    font-size: 50px;
+    font-family: "Outfit" ,sans-serif;
+    color: hsl(24, 5%, 18%);
+
+}
+#box-prep p{
+    color: hsl(30, 10%, 34%);
+    font-family: "Young Serif", sans-serif;
+    font-size: 20px;
+    padding: 20px 2px;
+}
+
+/*box pass*/
+
+#box-pass{
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 4px;
+    padding: 20px;
+}
+#list-prep{
+    padding-left: 40px;
+}
+.text-prep{
+    color: hsl(332, 51%, 32%);
+    font-family: "Outfit" , sans-serif;    ;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 14px;
+
+}
+
+/*Class da linhas de list-prep,list-ingredient,list intructions*/
+.line-revenue{
+    font-family: "Outfit" ,sans-serif;
+    color: hsl(24, 5%, 18%);
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px;
+    
+}
+/*Seletor para o marcador de lista*/
+.line-revenue::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+ 
+/*box ingredient*/
+
+#list-ingredient{
+    background-color: hsl(330, 100%, 98%);
+    padding: 30px;
+    border-radius: 4px;    
+    
+}
+
+/*box-instructions*/
+
+#list-intructions{
+   
+    padding: 30px;
+    border-radius: 4px;    
+}
+/*box-nutrition*/
+
+#text-nutri{
+    color: hsl(30, 10%, 34%);
+    font-family: "Young Serif", sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    
+}
+#tab-nutrion{
+    width: 100%;
+    padding: 10px 30px;
+    
+}
+
+#box-nutrion tr{
+    text-align: center;
+    
+   
+    
+}
+#box-nutrion td, th{
+    text-align: left;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    padding: 10px;
+ 
+}
+th{
+    font-weight: 500;
+    color: hsl(30, 10%, 34%);
+}
+td{
+    font-weight: 600;
+    color: hsl(14, 45%, 36%);
+}
+.titulo{
+    color: hsl(14, 45%, 36%);
+    font-size: 40px;
+    font-family: "Young Serif" , sans-serif;
+    font-weight: 400;
+    padding: 10px;
+  
+}
+@media (max-width: 768px){
+    #box-key{
+        width: 100%;
+        flex-direction: column;
+    }
+}
